@@ -22,6 +22,10 @@ Route::get('/gallery', function () {
     return view('gallery');
 });
 
+Route::get('/upload', function () {
+    return view('upload');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
