@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-class SiteController extends Controller
+use App\Models\User;
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('index');
+        $users = User::all();
+        return view('users',['users' => $users]);
     }
 
     /**
