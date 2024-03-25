@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Spatie\Permission\Models\Permission;
 
 class PermissionSeeder extends Seeder
 {
@@ -17,6 +16,5 @@ class PermissionSeeder extends Seeder
         Permission::create(['name' => 'create users']);
         Permission::create(['name' => 'edit users']);
         Permission::create(['name' => 'delete users']);
-        Permission::create(['name' => 'access admin dashboard']);
     }
 }
