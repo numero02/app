@@ -11,6 +11,46 @@
             <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
+        <!-- Address -->
+        <div>
+            <x-input-label for="address" :value="__('address')" />
+            <x-text-input id="address" class="block mt-1 w-full" type="text" name="address" :value="old('address')" required autofocus autocomplete="address" />
+            <x-input-error :messages="$errors->get('address')" class="mt-2" />
+        </div>
+         
+        <!-- City -->
+         <div>
+            <x-input-label for="city" :value="__('city')" />
+            <x-text-input id="city" class="block mt-1 w-full" type="text" name="city" :value="old('city')" required autofocus autocomplete="city" />
+            <x-input-error :messages="$errors->get('city')" class="mt-2" />
+        </div>
+        
+         <!-- State -->
+         <div>
+            <x-input-label for="state" :value="__('state')" />
+            <x-text-input id="state" class="block mt-1 w-full" type="text" name="state" :value="old('state')" required autofocus autocomplete="state" />
+            <x-input-error :messages="$errors->get('state')" class="mt-2" />
+        </div>
+
+         <!-- Country -->
+         <div>
+            <x-input-label for="country" :value="__('country')" />
+            <x-text-input id="country" class="block mt-1 w-full" type="text" name="country" :value="old('country')" required autofocus autocomplete="country" />
+            <x-input-error :messages="$errors->get('country')" class="mt-2" />
+        </div>
+
+        <!-- PostalCode -->
+        <div>
+            <x-input-label for="postalcode" :value="__('postalcode')" />
+            <x-text-input id="postalcode" class="block mt-1 w-full" type="text" name="postalcode" :value="old('postalcode')" required autofocus autocomplete="postalcode" />
+            <x-input-error :messages="$errors->get('postalcode')" class="mt-2" />
+        </div>
+        <!-- Phone -->
+        <div>
+            <x-input-label for="phone" :value="__('phone')" />
+            <x-text-input id="phone" class="block mt-1 w-full" type="text" name="phone" :value="old('phone')" required autofocus autocomplete="phone" />
+            <x-input-error :messages="$errors->get('phone')" class="mt-2" />
+        </div>
 
         <!-- Email Address -->
         <div class="mt-4">
